@@ -40,16 +40,34 @@ código destino, realizando as conversões dos mnemônicos e dos rótulos,
 como descrito acima. A possibilidade de inserir _externals_ e _entry points_
 no código pode ser ignorada.
 
+Já que um montador genérico como o usado na disciplina seria de difícil
+construção em linguagem de montagem, é recomendado adotar simplificações
+para garantir uma implementação minimamente funcional, e remover essas
+simplificações aos poucos, para garantir que o trabalho resulte em alguma
+entrega funcional. Algumas simplificações que podem ser adotadas
+e que podem facilitar seu trabalho são:
+
+* Alinhar o código de forma que todos os elementos tenham número par de
+  caracteres (símbolos, espaços separadores, imediatos, separador de linha
+  etc.);
+* Empregar a biblioteca de processamento de strings desenvolvida no
+  laboratório de linguagem de montagem;
+* Fazer símbolos com somente dois caracteres cada;
+* Não implementar tratamento de todas as pseudo-instruções;
+* Não implementar tratamento de erro.
+
 O trabalho pode ser feito em duplas ou individualmente. Definir escopo
 de uso da biblioteca, mensagens de erro coerentes, eventuais limitações
 e funcionalidades não comentadas acima fazem parte do trabalho.
 
 ### Desafio
 
-Se tudo funcionar até aqui, o próximo passo é desenvolver um
-montador relocável. Deve ser adicionada a possibilidade de inserção dos
-símbolos `&` e `@` no código origem e o montador deverá gerar os
-códigos calculando os nibbles iniciais, de acordo com o visto no teoria.
+Se tudo funcionar até aqui,
+*depois de remover todas as simplificações que foram adotadas para o montador absoluto*,
+o próximo passo é desenvolver um montador relocável. Deve ser adicionada
+a possibilidade de inserção dos símbolos `&` e `@` no código origem e o
+montador deverá gerar os códigos calculando os nibbles iniciais, de acordo
+com o visto no teoria.
 
 
 ## Perguntas
