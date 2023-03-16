@@ -2,7 +2,7 @@
 
 ## Introdução
 
-Este projeto é um complemento da disciplina de Sistemas de Programação.
+Este projeto é um complemento da disciplina "Sistemas de Programação".
 Para entender corretamente o que deve ser feito, deve-se ter claro todos
 os processos e códigos estudados e utilizados em grande parte da
 disciplina, de forma que estão resumidos a seguir.
@@ -10,10 +10,10 @@ disciplina, de forma que estão resumidos a seguir.
 ## Base de Sistemas de Programação
 
 O montador é um programa que foi de suma importância durante muitos
-experimentos do laboratório, ele é um tipo de compilador de muito baixo
-nível e, por isso, é bastante mais simples que um compilador usual. Este
+experimentos do laboratório. Ele é um tipo de compilador de muito baixo
+nível e, por isso, é mais simples que um compilador usual. Este
 código, como utilizado na disciplina, é responsável por ler um arquivo
-escrito em ASM, a linguagem de montagem da MVN e transformá-lo em
+escrito em ASM, a linguagem de montagem da MVN, e transformá-lo em
 linguagem de máquina, traduzindo os mnemônicos e operando sobre os
 endereços de cada variável. O montador que foi utilizado no curso foi
 escrito em uma linguagem de alto nível e tem funcionalidades bastante
@@ -37,18 +37,20 @@ converta códigos em ASM para seu análogo em MVN.
 Deverá ser lido um arquivo, da forma como foi feito nos laboratório, que
 contenha o código origem e deverá ser escrito, em um outro arquivo, o
 código destino, realizando as conversões dos mnemônicos e dos rótulos,
-como descrito acima. A possibilidade de inserir externals e entry points
+como descrito acima. A possibilidade de inserir _externals_ e _entry points_
 no código pode ser ignorada.
 
+O trabalho pode ser feito em duplas ou individualmente. Definir escopo
+de uso da biblioteca, mensagens de erro coerentes, eventuais limitações
+e funcionalidades não comentadas acima fazem parte do trabalho.
+
 ### Desafio
+
 Se tudo funcionar até aqui, o próximo passo é desenvolver um
 montador relocável. Deve ser adicionada a possibilidade de inserção dos
 símbolos `&` e `@` no código origem e o montador deverá gerar os
 códigos calculando os nibbles iniciais, de acordo com o visto no teoria.
 
-O trabalho pode ser feito em duplas ou individualmente. Definir escopo
-de uso da biblioteca, mensagens de erro coerentes, eventuais limitações
-e funcionalidades não comentadas acima FAZEM parte do trabalho.
 
 ## Perguntas
 
@@ -73,7 +75,7 @@ Seguem algumas perguntas a serem respondidas depois da codificação:
 
 Dois ou mais arquivos devem ser entregues:
 
-1.  **Montador absoluto:** um arquivo em MVN chamado "montador.mvn"
+1.  **Montador absoluto:** um arquivo em MVN chamado `montador.asm`
     contendo o código que faz a montagem de arquivos ASM.
 
 2.  **Relatório:** um arquivo chamado `relatorio_<NUSP1>_<NUSP2>.pdf` para
