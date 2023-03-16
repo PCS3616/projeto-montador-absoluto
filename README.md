@@ -93,7 +93,7 @@ Seguem algumas perguntas a serem respondidas depois da codificação:
 
 Dois ou mais arquivos devem ser entregues:
 
-1.  **Montador absoluto:** um arquivo em MVN chamado `montador.asm`
+1.  **Montador absoluto:** um arquivo em ASM chamado `montador.asm`
     contendo o código que faz a montagem de arquivos ASM.
 
 2.  **Relatório:** um arquivo chamado `relatorio_<NUSP1>_<NUSP2>.pdf` para
