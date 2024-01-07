@@ -41,26 +41,34 @@ como descrito acima. A possibilidade de inserir _externals_ e _entry points_
 no código pode ser ignorada.
 
 Já que um montador genérico como o usado na disciplina seria de difícil
-construção em linguagem de montagem, é recomendado adotar simplificações
-para garantir uma implementação minimamente funcional, e remover essas
-simplificações aos poucos, para garantir que o trabalho resulte em alguma
-entrega funcional. Algumas simplificações que podem ser adotadas
-e que podem facilitar seu trabalho são:
+construção em linguagem de montagem, serão adotadas simplificações
+para garantir uma implementação minimamente funcional. As simplificações adotadas serão:
 
 * Alinhar o código de forma que todos os elementos tenham número par de
   caracteres (símbolos, espaços separadores, imediatos, separador de linha
   etc.);
-* Empregar a biblioteca de processamento de strings desenvolvida no
-  laboratório de linguagem de montagem;
-* Fazer símbolos com somente dois caracteres cada;
-* Não implementar tratamento de todas as pseudo-instruções;
-* Não implementar tratamento de erro.
+* Cada símbolo terá dois caracteres;
+* Cada linha terminará com o par de caracteres `<s>\n`;
+* O fim de arquivo `EOF` será indicado por `0000`;
+* Realizar o apenas tratamento da pseudo-instrução K, além das demais 16 instruções;
+* Desconsiderar o uso de _entry_points_ e _externals_;
+* Não implementar tratamento de erro, isto é supõe-se que todo arquivo de entrada está corretamente formatado;
+* Os arquivos a serem montados terão no máximos 50 linhas de código;
+* Os dois formatos possíveis de uma linha do arquivo `.asm` são:
+  * `Label`\<s>\<s>`MNEM`\<s>\<s>`Label`\<s>\<s>`Comments`\<s>`\n`
+  * `Label`\<s>\<s>`K`\<s>\<s>`/Value`\<s>\<s>`Comments`\<s>`\n`
 
-O trabalho pode ser feito em duplas ou individualmente. Definir escopo
-de uso da biblioteca, mensagens de erro coerentes, eventuais limitações
-e funcionalidades não comentadas acima fazem parte do trabalho.
+### Glossário
 
-### Desafio
+* `<s>`: caracter ASCII espaço.
+* Label: rótulo composto por exatamente 2 caracteres ASCII.
+* MNEM: mneumônico representando uma das 16 instruções.
+* Value: valor hexadecimal, codificado em ASCII, composto por exatamente 4 dígitos.
+* Comments: comentários, iniciados por `<s>;`, com uma quantidade qualquer de caracteres. Mas essa quantidade é sempre par e dentro de um comentário nunca haverá o caracter `\n`.
+
+O trabalho pode ser feito em dupla ou individualmente. Recomenda-se utilizar as bibliotecas desenvolvidas nos laboratórios 7 e 8.
+
+### Desafio: Ainda vai ter?
 
 Se tudo funcionar até aqui,
 *depois de remover todas as simplificações que foram adotadas para o montador absoluto*,
@@ -72,22 +80,18 @@ com o visto no teoria.
 
 ## Perguntas
 
-Seguem algumas perguntas a serem respondidas depois da codificação:
+Seguem algumas perguntas a serem respondidas - de forma geral - depois da codificação:
 
-1.  Os algoritmos propostos podem ser mais eficientes? Como? Se sim, por
-    que a forma menos eficiente foi escolhida?
+1.  O que teria que ser mudado no seu código para comportar rótulos com um número arbitrário de caracteres?
 
-2.  Os códigos escritos podem ser mais eficientes? Como? Se sim, por que
-    a forma menos eficiente foi escolhida?
+2.  O que teria que ser mudado no seu código para lidar com espaçamentos de tamanho qualquer, e não apenas de tamanho 2?
 
-3.  Qual foi a maior dificuldade em implementar o montador?
+3. O que teria que ser mudado no seu código para lidar com outras pseudo-instruções? Por exemplo `&` e `@`.
 
 4.  O que teria que ser mudado no seu código para comportar a definição
     de externals? E para a definição de entry points?
 
-5.  O que aconteceria com a execução do seu código se for fornecido um
-    arquivo com um código incorreto? Um código muito grande poderia
-    gerar problemas.
+5.  O que teria que ser mudado no seu código para tratar erros no arquivo lido ? Como símbolos não resolvidos ou uso de instruções inexistentes.
 
 ## Entrega
 
