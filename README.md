@@ -57,6 +57,8 @@ para garantir uma implementação minimamente funcional. As simplificações ado
 * Os dois formatos possíveis de uma linha do arquivo `.asm` são:
   * `Label`\<s>\<s>`MNEM`\<s>\<s>`Label`\<s>\<s>`Comments`\<s>`\n`
   * `Label`\<s>\<s>`K`\<s>\<s>`/Value`\<s>\<s>`Comments`\<s>`\n`
+* O formato esperado para cada linha do arquivo `.mvn` gerado é:
+  * `Address`\<s>\<s>`Instruction`\<s>`\n`
 
 Além disso, considere que o arquivo `.asm` a ser lido está no dispositivo `300`.
 Enquanto, o arquivo `.mvn` deve ser escrito no disposivito `301`.
@@ -68,6 +70,8 @@ Enquanto, o arquivo `.mvn` deve ser escrito no disposivito `301`.
 * MNEM: mneumônico representando uma das 16 instruções.
 * Value: valor hexadecimal, codificado em ASCII, composto por exatamente 4 dígitos.
 * Comments: comentários, iniciados por `<s>;`, com uma quantidade qualquer de caracteres. Mas essa quantidade é sempre par e dentro de um comentário nunca haverá o caracter `\n`.
+* Address: Endereço da instrução composto por 4 dígitos hexadecimais codificados em ASCII.
+* Instruction: Instrução composta por seu opcode e seu operando, totalizando 4 dígitos hexadecimais codificados em ASCII.
 
 O trabalho pode ser feito em dupla ou individualmente. Recomenda-se utilizar as bibliotecas desenvolvidas nos laboratórios 7 e 8.
 
