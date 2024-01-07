@@ -58,6 +58,9 @@ para garantir uma implementação minimamente funcional. As simplificações ado
   * `Label`\<s>\<s>`MNEM`\<s>\<s>`Label`\<s>\<s>`Comments`\<s>`\n`
   * `Label`\<s>\<s>`K`\<s>\<s>`/Value`\<s>\<s>`Comments`\<s>`\n`
 
+Além disso, considere que o arquivo `.asm` a ser lido está no dispositivo `300`.
+Enquanto, o arquivo `.mvn` deve ser escrito no disposivito `301`.
+
 ### Glossário
 
 * `<s>`: caracter ASCII espaço.
