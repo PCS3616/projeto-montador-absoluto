@@ -75,19 +75,9 @@ Enquanto, o arquivo `.mvn` deve ser escrito no disposivito `301`.
 
 O trabalho pode ser feito em dupla ou individualmente. Recomenda-se utilizar as bibliotecas desenvolvidas nos laboratórios 7 e 8.
 
-### Desafio: Ainda vai ter?
-
-Se tudo funcionar até aqui,
-*depois de remover todas as simplificações que foram adotadas para o montador absoluto*,
-o próximo passo é desenvolver um montador relocável. Deve ser adicionada
-a possibilidade de inserção dos símbolos `&` e `@` no código origem e o
-montador deverá gerar os códigos calculando os nibbles iniciais, de acordo
-com o visto no teoria.
-
-
 ## Perguntas
 
-Seguem algumas perguntas a serem respondidas - de forma geral - depois da codificação:
+Seguem algumas perguntas a serem respondidas no relatório - de forma geral - depois da codificação:
 
 1.  O que teria que ser mudado no seu código para comportar rótulos com um número arbitrário de caracteres?
 
@@ -112,6 +102,6 @@ Dois ou mais arquivos devem ser entregues:
     contendo uma descrição resumida do problema e dos conceitos e uma descrição
     detalhada das etapas de resolução, da estratégia utilizada em cada módulo
     e outras informações que julgarem úteis. O relatório pode conter imagens
-    das execuções de teste;
+    das execuções de teste. O relatório **deve** ser feito em LaTeX, pessoalmente recomendo a utilização do [Overleaf](https://pt.overleaf.com/).
 
 3.  Outros arquivos que julgar necessário.
