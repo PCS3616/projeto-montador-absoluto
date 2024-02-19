@@ -50,13 +50,12 @@ para garantir uma implementação minimamente funcional. As simplificações ado
 * Cada símbolo terá dois caracteres;
 * Cada linha terminará com o par de caracteres `<s>\n`;
 * O fim de arquivo `EOF` será indicado por `0000`;
-* Realizar o apenas tratamento da pseudo-instrução K, além das demais 16 instruções;
+* Realizar o apenas tratamento das 16 instruções;
 * Desconsiderar o uso de _entry_points_ e _externals_;
 * Não implementar tratamento de erro, isto é supõe-se que todo arquivo de entrada está corretamente formatado;
 * Os arquivos a serem montados terão no máximos 50 linhas de código;
-* Os dois formatos possíveis de uma linha do arquivo `.asm` são:
+* O único formato possível de uma linha do arquivo `.asm` é:
   * `Label`\<s>\<s>`MNEM`\<s>\<s>`Label`\<s>\<s>`Comments`\<s>`\n`
-  * `Label`\<s>\<s>`K`\<s>\<s>`/Value`\<s>\<s>`Comments`\<s>`\n`
 * O formato esperado para cada linha do arquivo `.mvn` gerado é:
   * `Address`\<s>\<s>`Instruction`\<s>`\n`
 
@@ -83,12 +82,14 @@ Seguem algumas perguntas a serem respondidas no relatório - de forma geral - de
 
 2.  O que teria que ser mudado no seu código para lidar com espaçamentos de tamanho qualquer, e não apenas de tamanho 2?
 
-3. O que teria que ser mudado no seu código para lidar com outras pseudo-instruções? Por exemplo `&` e `@`.
+3. O que teria que ser mudado no seu código para lidar com as pseudo-instruções? Por exemplo `&`, `@` e `K`.
 
 4.  O que teria que ser mudado no seu código para comportar a definição
     de externals? E para a definição de entry points?
 
 5.  O que teria que ser mudado no seu código para tratar erros no arquivo lido ? Como símbolos não resolvidos ou uso de instruções inexistentes.
+
+Nota: Além dessas perguntas, deve-se explicar o funcionamento do seu código, para tal pode-se utilizar imagens, trechos de código, etc.
 
 ## Entrega
 
@@ -99,9 +100,8 @@ Dois ou mais arquivos devem ser entregues:
 
 2.  **Relatório:** um arquivo chamado `relatorio_<NUSP1>_<NUSP2>.pdf` para
     trabalhos realizados em dupla, ou `relatorio_<NUSP>.pdf` para individuais
-    contendo uma descrição resumida do problema e dos conceitos e uma descrição
-    detalhada das etapas de resolução, da estratégia utilizada em cada módulo
-    e outras informações que julgarem úteis. O relatório pode conter imagens
+    contendo uma descrição resumida do problema e uma descrição
+    detalhada das etapas de resolução, da estratégia utilizada em cada módulo e respostas as perguntas propostas,e outras informações que julgarem úteis. O relatório pode conter imagens
     das execuções de teste. O relatório **deve** ser feito em LaTeX, pessoalmente recomendo a utilização do [Overleaf](https://pt.overleaf.com/).
 
 3.  Outros arquivos que julgar necessário.
