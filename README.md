@@ -100,8 +100,7 @@ Dois ou mais arquivos devem ser entregues:
 
 2.  **Relatório:** um arquivo chamado `relatorio_<NUSP1>_<NUSP2>.pdf` para
     trabalhos realizados em dupla, ou `relatorio_<NUSP>.pdf` para individuais
-    contendo uma descrição resumida do problema e uma descrição
-    detalhada das etapas de resolução, da estratégia utilizada em cada módulo e respostas as perguntas propostas,e outras informações que julgarem úteis. O relatório pode conter imagens
-    das execuções de teste. O relatório **deve** ser feito em LaTeX, pessoalmente recomendo a utilização do [Overleaf](https://pt.overleaf.com/).
+    contendo os detalhes de como foram realizadas as implementações de cada tópico (ex. resolução de símbolos, tratamento de comentários, conversão de MEM2OP, etc.), além das respostas às perguntas propostas,e outras informações que julgarem úteis.
+    O relatório pode conter imagens das execuções de teste. O relatório **deve** ser feito em LaTeX, pessoalmente recomendo a utilização do [Overleaf](https://pt.overleaf.com/).
 
 3.  Outros arquivos que julgar necessário.
