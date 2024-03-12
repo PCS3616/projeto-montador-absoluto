@@ -95,8 +95,8 @@ Nota: Além dessas perguntas, deve-se explicar o funcionamento do seu código, p
 
 Dois ou mais arquivos devem ser entregues:
 
-1.  **Montador absoluto:** um arquivo em ASM chamado `montador.asm`
-    contendo o código que faz a montagem de arquivos ASM.
+1.  **Montador absoluto:** arquivo(s) ASM utilizados para a codificação do montador, 
+    além da versão em MVN chamado `montador.mvn` (gerado pelo `mvn-cli`).
 
 2.  **Relatório:** um arquivo chamado `relatorio_<NUSP1>_<NUSP2>.pdf` para
     trabalhos realizados em dupla, ou `relatorio_<NUSP>.pdf` para individuais
@@ -104,3 +104,11 @@ Dois ou mais arquivos devem ser entregues:
     O relatório pode conter imagens das execuções de teste. O relatório **deve** ser feito em LaTeX, pessoalmente recomendo a utilização do [Overleaf](https://pt.overleaf.com/).
 
 3.  Outros arquivos que julgar necessário.
+
+## Observações Gerais
+
+* O montador absoluto deve ser executado pela MVN com endereço inicial `0x0000`.
+
+* Os arquivos de entrega foram modificados para permitir que os alunos codifiquem o trabalho utilizando 1 ou mais arquivos ASM. Sendo que, o arquivo MVN da entrega é simplesmente o arquivo gerado pelo `mvn-cli`, a partir do(s) arquivo(s) ASM.
+
+* Recomenda-se a utilização de comentários e nomes de rótulos autoexplicativos para facilitar a correção do trabalho.
