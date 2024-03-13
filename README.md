@@ -58,6 +58,7 @@ para garantir uma implementação minimamente funcional. As simplificações ado
   * `Label`\<s>\<s>`MNEM`\<s>\<s>`Label`\<s>\<s>`Comments`\<s>`\n`
 * O formato esperado para cada linha do arquivo `.mvn` gerado é:
   * `Address`\<s>\<s>`Instruction`\<s>`\n`
+* Como não será utilizado as pseudo-instruções `&` e `@`, deve-se considerar que o endereço da primeira instrução é `0x0000`.
 
 Além disso, considere que o arquivo `.asm` a ser lido está no dispositivo `300`.
 Enquanto, o arquivo `.mvn` deve ser escrito no disposivito `301`.
@@ -67,7 +68,6 @@ Enquanto, o arquivo `.mvn` deve ser escrito no disposivito `301`.
 * `<s>`: caracter ASCII espaço.
 * Label: rótulo composto por exatamente 2 caracteres ASCII.
 * MNEM: mneumônico representando uma das 16 instruções.
-* Value: valor hexadecimal, codificado em ASCII, composto por exatamente 4 dígitos.
 * Comments: comentários, iniciados por `<s>;`, com uma quantidade qualquer de caracteres. Mas essa quantidade é sempre par e dentro de um comentário nunca haverá o caracter `\n`.
 * Address: Endereço da instrução composto por 4 dígitos hexadecimais codificados em ASCII.
 * Instruction: Instrução composta por seu opcode e seu operando, totalizando 4 dígitos hexadecimais codificados em ASCII.
@@ -76,7 +76,7 @@ O trabalho pode ser feito em dupla ou individualmente. Recomenda-se utilizar as 
 
 ## Perguntas
 
-Seguem algumas perguntas a serem respondidas no relatório - de forma geral - depois da codificação:
+Seguem algumas perguntas a serem respondidas no relatório - em linhas gerais - depois da codificação:
 
 1.  O que teria que ser mudado no seu código para comportar rótulos com um número arbitrário de caracteres?
 
@@ -88,6 +88,8 @@ Seguem algumas perguntas a serem respondidas no relatório - de forma geral - de
     de externals? E para a definição de entry points?
 
 5.  O que teria que ser mudado no seu código para tratar erros no arquivo lido ? Como símbolos não resolvidos ou uso de instruções inexistentes.
+
+6. O que teria que ser mudado no seu código para lidar com valores hexadecimais ?
 
 Nota: Além dessas perguntas, deve-se explicar o funcionamento do seu código, para tal pode-se utilizar imagens, trechos de código, etc.
 
@@ -112,3 +114,5 @@ Dois ou mais arquivos devem ser entregues:
 * Os arquivos de entrega foram modificados para permitir que os alunos codifiquem o trabalho utilizando 1 ou mais arquivos ASM. Sendo que, o arquivo MVN da entrega é simplesmente o arquivo gerado pelo `mvn-cli`, a partir do(s) arquivo(s) ASM.
 
 * Recomenda-se a utilização de comentários e nomes de rótulos autoexplicativos para facilitar a correção do trabalho.
+
+* Recomenda-se configurar a formatação do seu editor de texto para considerar a tecla `tab` como sendo 2 espaços (`<s>`) e a tecla `enter` como sendo apenas 1 `\n` (LF). No `vscode`, é possível realizar essas modificações no canto direito da barra inferior.
