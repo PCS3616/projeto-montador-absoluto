@@ -74,6 +74,10 @@ Enquanto, o arquivo `.mvn` deve ser escrito no disposivito `301`.
 
 O trabalho pode ser feito em dupla ou individualmente. Recomenda-se utilizar as bibliotecas desenvolvidas nos laboratórios 7 e 8.
 
+### Exemplo
+
+Neste repositório, foram disponibilizados 2 arquivos com a formatação exata da entrada e da saída esperada para o montador absoluto, cujos nomes são: `exemplo_input.asm` e `exemplo_output.mvn`.
+
 ## Perguntas
 
 Seguem algumas perguntas a serem respondidas no relatório - em linhas gerais - depois da codificação:
@@ -116,3 +120,5 @@ Dois ou mais arquivos devem ser entregues:
 * Recomenda-se a utilização de comentários e nomes de rótulos autoexplicativos para facilitar a correção do trabalho.
 
 * Recomenda-se configurar a formatação do seu editor de texto para considerar a tecla `tab` como sendo 2 espaços (`<s>`) e a tecla `enter` como sendo apenas 1 `\n` (LF). No `vscode`, é possível realizar essas modificações no canto direito da barra inferior.
+
+* Uma maneira de conferir a formatação da saída do montador com o arquivo `exemplo_output.mvn` é utilizar o comando `diff <arquivo1> <arquivo2>`. Outra ideia, seria utilizar o próprio sistema de versionamento do git, ou seja sobrescrever o arquivo `exemplo_output.mvn` com a versão gerada pelo seu montador e utilizar o git/github para observar as diferenças.
