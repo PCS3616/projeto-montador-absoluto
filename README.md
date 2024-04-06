@@ -78,25 +78,6 @@ O trabalho pode ser feito em dupla ou individualmente. Recomenda-se utilizar as 
 
 Neste repositório, foram disponibilizados 2 arquivos com a formatação exata da entrada e da saída esperada para o montador absoluto, cujos nomes são: `exemplo_input.asm` e `exemplo_output.mvn`.
 
-## Perguntas
-
-Seguem algumas perguntas a serem respondidas no relatório - em linhas gerais - depois da codificação:
-
-1.  O que teria que ser mudado no seu código para comportar rótulos com um número arbitrário de caracteres?
-
-2.  O que teria que ser mudado no seu código para lidar com espaçamentos de tamanho qualquer, e não apenas de tamanho 2?
-
-3. O que teria que ser mudado no seu código para lidar com as pseudo-instruções? Por exemplo `&`, `@` e `K`.
-
-4.  O que teria que ser mudado no seu código para comportar a definição
-    de externals? E para a definição de entry points?
-
-5.  O que teria que ser mudado no seu código para tratar erros no arquivo lido ? Como símbolos não resolvidos ou uso de instruções inexistentes.
-
-6. O que teria que ser mudado no seu código para lidar com valores hexadecimais ?
-
-Nota: Além dessas perguntas, deve-se explicar o funcionamento do seu código, para tal pode-se utilizar imagens, trechos de código, etc.
-
 ## Entrega
 
 Dois ou mais arquivos devem ser entregues:
@@ -106,7 +87,7 @@ Dois ou mais arquivos devem ser entregues:
 
 2.  **Relatório:** um arquivo chamado `relatorio_<NUSP1>_<NUSP2>.pdf` para
     trabalhos realizados em dupla, ou `relatorio_<NUSP>.pdf` para individuais
-    contendo os detalhes de como foram realizadas as implementações de cada tópico (ex. resolução de símbolos, tratamento de comentários, conversão de MEM2OP, etc.), além das respostas às perguntas propostas,e outras informações que julgarem úteis.
+    contendo os detalhes de como foram realizadas as implementações de cada tópico (ex. resolução de símbolos, tratamento de comentários, conversão de MEM2OP, etc.) e outras informações que julgarem úteis.
     O relatório pode conter imagens das execuções de teste. O relatório **deve** ser feito em LaTeX, pessoalmente recomendo a utilização do [Overleaf](https://pt.overleaf.com/).
 
 3.  Outros arquivos que julgar necessário.
